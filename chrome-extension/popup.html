@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>e=digger</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><strong>e=digger</strong> <span id="status">·</span></header>
+
+  <label>제목
+    <input id="title" type="text" placeholder="현재 페이지 제목">
+  </label>
+  <label>URL
+    <input id="url" type="text" placeholder="https://...">
+  </label>
+  <label>본문 / 선택 텍스트
+    <textarea id="content" rows="5" placeholder="선택된 텍스트가 여기 들어옵니다"></textarea>
+  </label>
+  <label>태그(쉼표 구분)
+    <input id="tags" type="text" placeholder="예: 디자인, 영감, 논문">
+  </label>
+  <label>메모(한 줄)
+    <input id="memo" type="text" placeholder="왜 저장했는지 한 줄로">
+  </label>
+
+  <div class="row">
+    <button id="save">저장</button>
+    <button id="openOptions" class="ghost">옵션</button>
+  </div>
+  <div id="msg" class="msg"></div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

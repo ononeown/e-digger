@@ -1,0 +1,15 @@
+:root { color-scheme: light dark; }
+body { font: 13px/1.4 system-ui, sans-serif; margin: 0; padding: 12px; width: 340px; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+label { display:block; font-size:11px; color:#888; margin-top:6px; }
+input, textarea { width:100%; box-sizing:border-box; padding:6px; font:inherit;
+  border:1px solid #ccc3; border-radius:6px; background:transparent; color:inherit; }
+textarea { resize: vertical; }
+.row { display:flex; gap:6px; margin-top:10px; }
+button { flex:1; padding:8px 10px; border-radius:6px; border:0; cursor:pointer;
+  background:#3b82f6; color:#fff; font-weight:600; }
+button.ghost { background:transparent; color:inherit; border:1px solid #ccc3; }
+.msg { margin-top:8px; font-size:12px; min-height:1em; }
+.msg.err { color:#e11d48; }
+.msg.ok  { color:#10b981; }
+#status { font-size:11px; color:#888; }

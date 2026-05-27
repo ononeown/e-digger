@@ -1,0 +1,9 @@
+{
+  "id": "edigger-sync",
+  "name": "e=digger Sync",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Sync clippings + analysis from Supabase into your vault as markdown notes.",
+  "author": "e=digger",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "e=digger Clipper",
+  "version": "0.1.0",
+  "description": "Send selected text or current page to your Second Brain (Supabase).",
+  "permissions": ["contextMenus", "storage", "activeTab", "scripting", "notifications"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

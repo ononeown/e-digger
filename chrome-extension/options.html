@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>e=digger Options</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>body { width: 480px; }</style>
+</head>
+<body>
+  <h2>e=digger 설정</h2>
+  <p style="font-size:12px;color:#888">
+    Supabase 프로젝트의 URL과 anon key를 입력하고, 이메일/비밀번호로 로그인합니다.<br>
+    또는 이미 가지고 있는 access token / refresh token을 직접 붙여넣어도 됩니다.
+  </p>
+
+  <label>Supabase URL
+    <input id="url" type="text" placeholder="https://xxx.supabase.co">
+  </label>
+  <label>anon key
+    <input id="anonKey" type="text" placeholder="eyJhbGciOi...">
+  </label>
+
+  <fieldset style="margin-top:12px;border:1px solid #ccc3;border-radius:6px;padding:8px">
+    <legend>이메일 로그인</legend>
+    <label>Email <input id="email" type="email"></label>
+    <label>Password <input id="password" type="password"></label>
+  </fieldset>
+
+  <fieldset style="margin-top:12px;border:1px solid #ccc3;border-radius:6px;padding:8px">
+    <legend>또는 토큰 직접 입력</legend>
+    <label>access_token <input id="accessToken" type="text"></label>
+    <label>refresh_token <input id="refreshToken" type="text"></label>
+  </fieldset>
+
+  <div class="row">
+    <button id="save">저장</button>
+    <button id="login" class="ghost">로그인 테스트</button>
+  </div>
+  <div id="msg" class="msg"></div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>
